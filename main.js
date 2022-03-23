@@ -7,7 +7,7 @@ function start() {
     recognition.start();
 }
 
-recognition.onResult = function (event) {
+recognition.onresult = function (event) {
     console.log(event);
     var content = event.results(0)[0].transcript;
     console.log(content);
