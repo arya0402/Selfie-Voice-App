@@ -9,7 +9,7 @@ function start() {
 
 recognition.onresult = function (event) {
     console.log(event);
-    var content = event.results(0)[0].transcript;
+    var content = event.results[0][0].transcript;
     console.log(content);
     document.getElementById("textarea").innerHTML = content;
 }
